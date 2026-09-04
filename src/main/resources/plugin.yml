@@ -1,0 +1,21 @@
+name: FirstPlugin
+version: '${version}'
+
+main: me.gleb4ik.firstPlugin.FirstPlugin
+api-version: '26.1'
+author: Gleb4ik2001
+
+description: My first try in plugin creation and java also
+
+commands:
+  calculator:
+    description: Считает 2 числа со знаком исчисления
+    aliases:
+      - calc
+      - calculate
+    usage: /calculate <num1> <+|-|/|*> <num2>
+
+  message:
+    aliases:
+      - m
+    usage: /m <hello|goodbye|whatsup>
