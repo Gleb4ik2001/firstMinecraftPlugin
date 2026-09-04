@@ -19,3 +19,13 @@ commands:
     aliases:
       - m
     usage: /m <hello|goodbye|whatsup>
+
+  spawnCreeper:
+    aliases:
+      - sc
+    usage: /sc <quantity>
+
+  spawnZombie:
+    aliases:
+      - sz
+    usage: /sz <quantity>
