@@ -1,6 +1,7 @@
 package me.gleb4ik.firstPlugin;
 
 import me.gleb4ik.firstPlugin.commands.CalculatorCMD;
+import me.gleb4ik.firstPlugin.commands.CalculatorCompleter;
 import me.gleb4ik.firstPlugin.commands.MessageCMD;
 import me.gleb4ik.firstPlugin.commands.MessageCompleter;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,6 +12,7 @@ public final class FirstPlugin extends JavaPlugin {
     public void onEnable() {
         System.out.println("Плагин стратанул");
         getCommand("calculator").setExecutor(new CalculatorCMD());
+        getCommand("calculator").setTabCompleter(new CalculatorCompleter());
         getCommand("message").setExecutor(new MessageCMD());
         getCommand("message").setTabCompleter(new MessageCompleter());
 
